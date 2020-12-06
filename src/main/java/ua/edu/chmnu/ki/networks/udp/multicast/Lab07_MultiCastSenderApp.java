@@ -12,7 +12,7 @@ public class Lab07_MultiCastSenderApp {
     public static void main(String[] args) throws SocketException, IOException {
         ExecutorService service = Executors.newCachedThreadPool();
         String tmp = "";
-        try(FileReader reader = new FileReader("f:/CHNU MOHILYNKA/4_Grade/PKM_Puzirev/javanetwork-master/target/classes/ua/edu/chmnu/ki/networks/udp/multicas/ttext.txt"))
+        try(FileReader reader = new FileReader("Ip_log.txt"))
         {
             // char by char
             int c;
@@ -45,7 +45,7 @@ public class Lab07_MultiCastSenderApp {
 
             int finalIndex = index;
             MultiCastSender sender = new MultiCastSender(group[index], port).setAction(() -> {
-                String toSend = "["+group[finalIndex]+ "Hello" +"] Message";
+                String toSend = "["+group[finalIndex]+ " Hello" +"] Message";
                 return toSend.getBytes();
             });
             service.submit(sender);
