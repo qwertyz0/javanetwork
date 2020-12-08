@@ -6,7 +6,7 @@
 
     <servlet>
         <servlet-name>SendEmail</servlet-name>
-        <servlet-class>ua.edu.chmnu.ki.networks.mail.Lab08_MailTomCat.SendEmail</servlet-class>
+        <servlet-class>ua.edu.chmnu.ki.networks.mail.Lab08_MailSend.SendEmail</servlet-class>
     </servlet>
 
     <servlet-mapping>

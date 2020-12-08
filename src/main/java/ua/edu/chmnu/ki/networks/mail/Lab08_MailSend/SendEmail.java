@@ -1,4 +1,4 @@
-package ua.edu.chmnu.ki.networks.mail.Lab08_MailTomCat;
+package ua.edu.chmnu.ki.networks.mail.Lab08_MailSend;
 
 import java.io.*;
 import java.util.*;
@@ -6,7 +6,6 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.mail.*;
 import javax.mail.internet.*;
-import javax.activation.*;
 
 public class SendEmail extends HttpServlet {
 
